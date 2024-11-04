@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index: link to all</title>
+
+    <style>
+        .contents {
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .button {
+            font-weight: 100;
+            font-size: 40px;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            background-color: black;
+            padding: 50px;
+            margin: 40px 0;
+            color: white;
+            cursor: pointer;
+        }
+
+        .sub-links {
+            display: none; 
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sub-link {
+            background-color: #333;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+
+        .sub-link:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contents">
+    <!-- Mens Team Button -->
+    <div class="button" onclick="toggleSubLinks('mensLinks')">Mens Team</div>
+    <div id="mensLinks" class="sub-links">
+        <a href="mens_team/Bruno_Cifaldi.html" class="sub-link">Bruno Cifaldi</a>
+        <a href="mens_team/Alex Nemecek18820260.html" class="sub-link">Alex Nemecek</a>
+        <a href="mens_team/Leo Chi26460401.html" class="sub-link">Leo Chi</a>
+        <a href="mens_team/Rowan Kim24801855.html" class="sub-link">Rowan Kim</a>
+        <a href="mens_team/Cole Harms26322018.html" class="sub-link">Cole Harms</a>
+        <a href="mens_team/Enshu Kuan23687884.html" class="sub-link">Enshu Kuan</a>
+        <a href="mens_team/Evan Leach26322027.html" class="sub-link">Evan Leach</a>
+        <a href="mens_team/Joowon Lee23349696.html" class="sub-link">Joowon Lee</a>
+        <a href="mens_team/Sage O'Lor26322021.html" class="sub-link">Sage O</a>
+        <a href="mens_team/Amir Abston25395576.html" class="sub-link">Amir Abston </a>
+        <a href="mens_team/Connor Jett24801564.html" class="sub-link">Connor Jett</a>
+        <a href="mens_team/Gustaf Finn21147171.html" class="sub-link">Gustaf Finn</a>
+        <a href="mens_team/Jude Shafer23349716.html" class="sub-link">Jude Shafer</a>
+        <a href="mens_team/Kyle Krasan21245954.html" class="sub-link">Kyle Krasan</a>
+        <a href="mens_team/Jackson Cichewicz26322046.html" class="sub-link">Jackson Cichewicz</a>
+        <a href="mens_team/Raphael Fournier23564875.html" class="sub-link">Raphael Fournier</a>
+        <a href="mens_team/Santiago Valenzuela23821078.html" class="sub-link">Santiago Valenzuela</a>
+        
+
+
+    </div>
+
+    <!-- Womens Team Button -->
+    <div class="button" onclick="toggleSubLinks('womensLinks')">Womens Team</div>
+    <div id="womensLinks" class="sub-links">
+        <a href="womens_team/Ann_Kececi.html" class="sub-link">Ann Kececi</a>
+        <a href="womens_team/Emily Mei22520376.html" class="sub-link">Emily Mei</a>
+        <a href="womens_team/Pia Odell26328678.html" class="sub-link">Pia Odell</a>
+        <a href="womens_team/Ann Kececi24802381.html" class="sub-link">Ann Kececi</a>
+        <a href="womens_team/Isla Tharp23349719.html" class="sub-link">Isla Tharp</a>
+        <a href="womens_team/Katie Yuan23349724.html" class="sub-link">Katie Yuan</a>
+        <a href="womens_team/Livi Byers26322051.html" class="sub-link">Livi Byers</a>
+        <a href="womens_team/Nina Beals23564881.html" class="sub-link">Nina Beals</a>
+        <a href="womens_team/Irie Scrase23564884.html" class="sub-link">Irie Scrase</a>
+        <a href="womens_team/Mara Mocanu23687883.html" class="sub-link">Mara Mocanu</a>
+        <a href="womens_team/Lucia Llanes26328690.html" class="sub-link">Lucia Llanes</a>
+        <a href="womens_team/Ruthie Scott23349715.html" class="sub-link">Ruthie Scott</a>
+        <a href="womens_team/Violet Olley26328683.html" class="sub-link">Violet Olley</a>
+        <a href="womens_team/Elsa Wenzlaff22520388.html" class="sub-link">Elsa Wenzla</a>
+        <a href="womens_team/Elin Tenbrink23349718.html" class="sub-link">Elin Tenbrink</a>
+        <a href="womens_team/Grace Hopkins21142901.html" class="sub-link">Grace Hopkins</a>
+        <a href="womens_team/Lily Greenberg23687875.html" class="sub-link">Lily Greenberg</a>
+        <a href="womens_team/Mara Mocanu23687883.html" class="sub-link">Mara Mocanu</a>
+        <a href="womens_team/Tia Cocciolone22520342.html" class="sub-link">Tia Cocciolone</a>
+        <a href="womens_team/Alison Kauffman23564882.html" class="sub-link">Alison Kauffman</a>
+        <a href="womens_team/Becca Van Lent24262808.html" class="sub-link">Becca Van Lent</a>
+        <a href="womens_team/Arabella Kessler23564883.html" class="sub-link">Arabella Kessler</a>
+        <a href="womens_team/Cecilia DeGuzman21142897.html" class="sub-link">Cecilia DeGuzman</a>
+        <a href="womens_team/Gwen Stotts-Walshe24802677.csv" class="sub-link">Gwen Stotts-Walshe</a>
+
+    </div>
+
+    <!-- Meets Button -->
+    <div class="button" onclick="toggleSubLinks('meetsLinks')">Meets</div>
+    <div id="meetsLinks" class="sub-links">
+        <a href="meets/37th_Early_Bird_Open.html" class="sub-link">37th Early Bird Open</a>
+        <a href="meets/Bret_Clements_Bath_Invitational_Womens_5000_Meters_J.V._24.html" class="sub-link">Bret_Clements_Bath_Invitational_Womens_5000_Meters_J.V._24.html</a>
+        <a href="meets/Jackson_Invitational_Womens_5000_Meters_Orange_Division_(1000_+_enrolment)_24.html" class="sub-link">Jackson_Invitational_Womens_5000_Meters_Orange_Division_(1000_+_enrolment)_24.html</a>
+        <a href="meets/Jackson_Invitational_Mens_5000_Meters_Orange_Division_(1000_+_enrolment)_24.html" class="sub-link">Jackson_Invitational_Mens_5000_Meters_Orange_Division_(1000_+_enrolment)_24.html</a>
+        <a href="meets/56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_JV_Girls_24.html" class="sub-link">56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_JV_Girls_24.html</a>
+        <a href="meets/56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_Girls_24.html" class="sub-link">56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_Girls_24.html</a>
+        <a href="meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_Boys_24.html" class="sub-link">meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_Boys_24.html</a>
+        <a href="meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_Boys_24.html" class="sub-link">meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_Boys_24.html</a>
+        <a href="meets/Bret_Clements_Bath_Invitational_Womens_5000_Meters_Class_1_24.html" class="sub-link">meets/Bret_Clements_Bath_Invitational_Womens_5000_Meters_Class_1_24.html</a>
+        <a href="meets/SEC-HS_Jamboree_#2_(Red)_Mens_5000_Meters_Varsity_Boys_24.html" class="sub-link">meets/SEC-HS_Jamboree_#2_(Red)_Mens_5000_Meters_Varsity_Boys_24.html</a>
+        <a href="meets/SEC-HS_Jamboree_#2_(Red)_Mens_5000_Meters_Varsity_Boys_24.html" class="sub-link">SEC-HS_Jamboree_#2_(Red)_Mens_5000_Meters_Varsity_Boys_24.html</a>
+        <a href="meets/SEC_Jamboree_#1_Womens_5000_Meters_Varsity_24.html" class="sub-link">SEC_Jamboree_#1_Womens_5000_Meters_Varsity_24.html</a>
+
+    </div>
+</div>
+
+<script>
+
+    function toggleSubLinks(id) {
+        const subLinks = document.getElementById(id);
+        const isVisible = subLinks.style.display === 'flex';
+
+        document.querySelectorAll('.sub-links').forEach(link => link.style.display = 'none');
+
+        subLinks.style.display = isVisible ? 'none' : 'flex';
+    }
+</script>
+
+</body>
+</html>
