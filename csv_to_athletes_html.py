@@ -152,6 +152,7 @@ def gen_athlete_page(data, outfile):
 
 
                      </footer>
+                     <script src="../js/imagePlaceholder.js"></script>
                </body>
          </html>
    '''
