@@ -1,0 +1,348 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&family=Fira+Sans:wght@300;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+:root {
+    --primary-light: #85d5ff;
+    --primary-dark-blue: #1e2a3f;
+    --primary-sea-green: #03757c;
+    --background-soft: #d4f1f7;
+    --background-muted: #e8fafc;
+    --accent-hover: #058fa6;
+    --highlight-green: #2ca089;
+    --soft-green: #81de85;
+    --sky-blue-shade: #009acb;
+
+    --darkmode-bg-main: #282828;
+    --darkmode-highlight: #33363b;
+    --darkmode-deep-bg: #151515;
+    --darkmode-muted-grey: #1e1e1e;
+    --darkmode-header: #484848;
+    --darkmode-faded: #737373;
+    --darkmode-highlight-green: #38b9a2;
+    --darkmode-highlight-blue: #1eb3cf;
+}
+
+/* Screen setting - Default: Light Mode*/
+
+html {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: var(--background-soft);
+    color: #333;
+    padding: 0;
+    margin: 0;
+    
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color:white;
+        background-color: var(--darkmode-bg-main);
+    }
+}
+
+@media (prefers-contrast: more) {
+    body {
+        background-color:white;
+        color: black;
+    }
+}
+
+/* Tables */
+table {
+    width: 100%;
+    background-color:white; 
+    color: var(--primary-dark-blue); 
+    border-collapse: collapse;
+    margin: 40px 0;
+    font-size: 15px; 
+
+}
+
+table tr:nth-child(even) {
+    background-color: var(--background-muted);
+}
+
+th, td {
+    text-align: center;
+    color: var(--primary-dark-blue); 
+    padding: 10px; 
+    border: 1px solid #ccc;
+
+}
+
+th {
+    background-color: var(--primary-dark-blue);
+    color:white; 
+}
+
+/* Special Styling for Comments or Highlighted Cells */
+table .highlight, table .comments {
+    font-style: italic;
+    font-weight: bold;
+    color: var(--sky-blue-shade); 
+}
+@media (prefers-contrast: more) {
+    thead tr {
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+    }
+    thead th {
+        background-color: black;
+
+        border-bottom: 1px solid white;
+    }
+
+
+    tbody tr {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: white;
+    }
+    tbody td {
+        border-bottom: 1px solid black;
+        border: 1px solid black;
+    }
+
+    main h2 {
+        color: black;
+    }
+}
+
+
+
+
+/* Header*/
+
+header {
+    position: sticky;
+    width: auto;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:white;
+    padding: 40px 0;
+    top: 50px;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: wobble 1s ease-in-out;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-dark-blue);
+
+
+}
+
+header img {
+    width: 168px;
+    height: auto;
+    border-radius: 36px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: var(--darkmode-header);
+    }
+    header h1 {
+        color:white;
+    }
+}
+
+@media (prefers-contrast: more) {
+    header {
+        background-color:white;
+    }
+    header h1 {
+        color: black;
+    }
+}
+
+/* Navigation*/
+
+nav {
+    position: sticky;
+    width: auto;
+    height: 50px;
+    top: 0;
+    z-index: 100;
+
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: var(--primary-light);
+    height: 50px;
+
+}
+
+nav ul li a {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--accent-hover);
+}
+
+@media (prefers-color-scheme: dark) {
+    nav ul {
+        background-color: var(--darkmode-muted-grey);
+    }
+    nav ul li a {
+        color: var(--primary-light);
+    }
+    nav ul li a:hover {
+        color: var(--accent-hover);
+    }
+}
+
+@media (prefers-contrast: more) {
+    nav ul {
+        background-color: black;
+    }
+    nav ul li a {
+        color:white;
+    }
+    nav ul li a:hover {
+        color: blue;
+    }
+}
+/* Main Content */
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+    animation: tada 1s ease-in-out;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: var(--primary-light);
+    color: var(--primary-dark-blue);
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer a {
+    color: var(--primary-sea-green);
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: var(--darkmode-deep-bg);
+        color: var(--primary-light);
+    }
+    footer a:hover {
+        color: var(--accent-hover);
+    }
+@media (prefers-contrast: more) {
+    footer {
+        background-color: black;
+        color: white;
+    
+
+
+}
+    }
+}
+
+/* FAB Icon*/
+
+body::before {
+    content: "\f002";
+    font-family: 'FontAwesome';
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--highlight-green);
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+body::after {
+    content: "\f0b0";
+    font-family: 'FontAwesome';
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    bottom: 100px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--sky-blue-shade);
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+@media (prefers-contrast: more) {
+    body::before {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+
+    body::after {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}
